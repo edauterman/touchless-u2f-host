@@ -85,7 +85,7 @@ should blink up and wait for touch.
 
  $ u2f-host -aauthenticate -o https://demo.yubico.com < foo > bar
 
-To authenticate without touch:
+Or to authenticate without touch:
 
  $ u2f-host -aauthenticate -t -o https://demo.yubico.com < foo > bar
 
@@ -105,7 +105,7 @@ On success, the output contains a counter and whether touch was asserted:
 [source, json]
 {"touch": "\u0001", "counter": 2}
 
-If you authenticated without touch, the output should look like this:
+Or if you authenticated without touch, the output should look like this:
 
 [source, json]
 {"touch": "\u0000", "counter": 2}
